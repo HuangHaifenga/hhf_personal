@@ -1,23 +1,29 @@
 /*删除html边距*/
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    -webkit-user-select: none; /* Chrome, Safari, Opera */
-    -khtml-user-select: none; /* Konqueror */
-    -moz-user-select: none; /* Firefox all */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    /* Chrome, Safari, Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Standard syntax */
     overflow: hidden;
 }
 
 @font-face {
     font-family: 'Pacifico';
-    src: url('https://accelerate-cdn.ccrui.cn/cc_personal_homepage/public/fonts/Pacifico-Regular.ttf') format('truetype');
+    src: url('/public/fonts/Pacifico-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'UniDream LED';
-    src: url('https://accelerate-cdn.ccrui.cn/cc_personal_homepage/public/fonts/UniDream LED Regular.ttf') format('truetype');
+    src: url('/public/fonts/UniDream LED Regular.ttf') format('truetype');
 }
 
 /*文字颜色*/
