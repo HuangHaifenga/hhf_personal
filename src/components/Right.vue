@@ -1,15 +1,13 @@
 <script lang="ts" setup>
+import {useRouter} from "vue-router";
 import {onMounted} from "vue";
 import {GetAWord} from "@/tool/httpRequest.js";
 import {ref} from "@vue/reactivity";
 import {getNowDate, getNowTime} from "@/tool/timeHelper.js";
 import {getIcon} from "@/tool/imageService.js";
-import {useGoToPdf} from "@/router/goToRouter.js";
+import {useGoToHome} from "@/router/goToRouter.js";
 
-
-const JumpPdf = useGoToPdf()
-
-
+const router = useRouter();
 const aWordHitokoto = ref("")
 const aWordFrom = ref("")
 
@@ -22,6 +20,7 @@ const nowDate = ref("")
 //当前时间
 const nowTime = ref("")
 
+const goToHome = useGoToHome();
 
 nowTime.value = getNowTime();
 nowDate.value = getNowDate();
@@ -54,15 +53,9 @@ const getAWord = () => {
 }
 
 //在新页面打开网页
-const openNewPage = (ev) => {
-  switch (ev) {
-    case "个人简历":
-      JumpPdf();
-      break;
-    default:
-      break;
-  }
-  // window.open(url)
+const openNewPage = (url: string) => {
+
+  window.open(url)
 }
 
 </script>
@@ -101,7 +94,7 @@ const openNewPage = (ev) => {
     </div>
 
     <div class="right-websiteList">
-      <div class="right-websiteList-blog websiteList card" @click="openNewPage('个人简历')">
+      <div class="right-websiteList-blog websiteList card" @click="openNewPage('/hhf_personal/HuangHaifeng.pdf')">
         <img :src="getIcon('blog.svg')" class="right-websiteList-item-icon">
         <span v-if="!isHideIconsText">
                     {{ $t('right.websiteList.blog') }}
