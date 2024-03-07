@@ -5,7 +5,7 @@ export default {
         goHomeButton: '返回主页',
     },
     left: {
-        introduction_content: "一个建立于 21 世纪的小站，存活于互联网的边缘",
+        introduction_content: "一个建立于 23 世纪的小站，存活于互联网的边缘",
         icons_text: {
             default: "欢迎联系我~",
             github: "大概是Github",
@@ -17,7 +17,7 @@ export default {
     },
     right: {
         websiteList: {
-            blog: "博客",
+            blog: "个人简历",
             img: "图床",
             short: "短链",
             aiChat: "AI聊天",

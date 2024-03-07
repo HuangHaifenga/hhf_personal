@@ -1,7 +1,7 @@
 <script setup>
-import {getIcon} from "@/tool/imageService.js";
-import {ref} from "@vue/reactivity";
-import {i18n} from "@/tool/languageChange.js";
+import { getIcon } from "@/tool/imageService.js";
+import { ref } from "@vue/reactivity";
+import { i18n } from "@/tool/languageChange.js";
 
 //查找文字
 const findText = (o) => {
@@ -22,8 +22,8 @@ const modifyLeftIconsText = (text = '') => {
     <div id="left">
 
         <div class="left-name">
-            <span id="left-name-domain">ccrui</span>
-            <span id="left-name-suffix">.cn</span>
+            <span id="left-name-domain">HuangHaifeng</span>
+            <!-- <span id="left-name-suffix">.cn</span> -->
         </div>
 
         <div class="left-introduction card">
@@ -37,32 +37,24 @@ const modifyLeftIconsText = (text = '') => {
 
         <div class="left-icons card">
             <div class="icons-container">
-                <a href="https://github.com/cr-zhichen"
-                   target="_blank"
-                   @mouseover="modifyLeftIconsText(findText('github'))"
-                   @mouseout="modifyLeftIconsText(findText('default'))"
-                >
+                <a href="https://github.com/HuangHaifenga" target="_blank"
+                    @mouseover="modifyLeftIconsText(findText('github'))"
+                    @mouseout="modifyLeftIconsText(findText('default'))">
                     <img :src="getIcon('github.png')" class="left-icons-item">
                 </a>
-                <a href="https://space.bilibili.com/6668879"
-                   target="_blank"
-                   @mouseover="modifyLeftIconsText(findText('bilibili'))"
-                   @mouseout="modifyLeftIconsText(findText('default'))"
-                >
+                <a href="https://space.bilibili.com/17314184" target="_blank"
+                    @mouseover="modifyLeftIconsText(findText('bilibili'))"
+                    @mouseout="modifyLeftIconsText(findText('default'))">
                     <img :src="getIcon('bilibili.png')" class="left-icons-item">
                 </a>
-                <a href="https://wpa.qq.com/msgrd?v=3&uin=296529530&site=qq&menu=yes"
-                   target="_blank"
-                   @mouseover="modifyLeftIconsText(findText('qq'))"
-                   @mouseout="modifyLeftIconsText(findText('default'))"
-                >
+                <a href="https://wpa.qq.com/msgrd?v=3&uin=811373173&site=qq&menu=yes" target="_blank"
+                    @mouseover="modifyLeftIconsText(findText('qq'))"
+                    @mouseout="modifyLeftIconsText(findText('default'))">
                     <img :src="getIcon('qq.png')" class="left-icons-item">
                 </a>
-                <a href="mailto:zgccrui@outlook.com"
-                   target="_blank"
-                   @mouseover="modifyLeftIconsText(findText('email'))"
-                   @mouseout="modifyLeftIconsText(findText('default'))"
-                >
+                <a href="mailto:huanghaifeng.cn@outlook.com" target="_blank"
+                    @mouseover="modifyLeftIconsText(findText('email'))"
+                    @mouseout="modifyLeftIconsText(findText('default'))">
                     <img :src="getIcon('email.png')" class="left-icons-item">
                 </a>
             </div>
@@ -75,7 +67,6 @@ const modifyLeftIconsText = (text = '') => {
 </template>
 
 <style scoped>
-
 a {
     text-decoration: none;
 }

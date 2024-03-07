@@ -2,9 +2,9 @@
 import axios from 'axios';
 
 const config =
-    {
-        "aWord": "https://v1.hitokoto.cn/"
-    }
+{
+    "aWord": "https://v1.hitokoto.cn/"
+}
 
 //Get调用一言接口
 export async function GetAWord(ok, err) {

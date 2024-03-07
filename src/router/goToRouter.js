@@ -1,5 +1,5 @@
-import {useRouter} from "vue-router";
-import {id} from "element-plus/es/locale/index";
+import { useRouter } from "vue-router";
+import { id } from "element-plus/es/locale/index";
 
 //跳转到首页
 export function useGoToHome() {
@@ -16,5 +16,15 @@ export function useGoToNotFound() {
 
     return function () {
         router.push("/NotFound");
+    };
+}
+
+// 跳转pdf页面
+
+export function useGoToPdf() {
+    const router = useRouter();
+
+    return function () {
+        router.push("/pdf");
     };
 }

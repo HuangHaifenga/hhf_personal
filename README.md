@@ -6,24 +6,22 @@
 
 ## 快速预览
 
-https://i.ccrui.dev/
-
-![](https://img-cdn.ccrui.cn/2023/05/25/9ZUKxq.png)
+[https://huanghaifenga.github.io/hhf_personal/](https://huanghaifenga.github.io/hhf_personal/)
 
 ## 安装依赖
 
-``` bash
+```bash
 npm install
 ```
 
 ## 运行
 
-``` bash
+```bash
 npm run dev
 ```
 
 ## 打包
 
-``` bash
+```bash
 npm run build
 ```
