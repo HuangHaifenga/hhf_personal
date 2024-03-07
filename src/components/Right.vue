@@ -100,7 +100,23 @@ const openNewPage = (url: string) => {
                     {{ $t('right.websiteList.blog') }}
                 </span>
       </div>
+      <div class="right-websiteList-blog websiteList card"
+           @click="openNewPage('https://huanghaifenga.github.io/practice_react/')">
+        <img :src="getIcon('short.svg')" class="right-websiteList-item-icon">
+        <span v-if="!isHideIconsText">
+                    {{ $t('right.websiteList.ReactCase') }}
+                </span>
+      </div>
+      <div class="right-websiteList-blog websiteList card"
+           @click="openNewPage('https://huanghaifenga.github.io/SignatureSystem/')">
+        <img :src="getIcon('aiChat.svg')" class="right-websiteList-item-icon">
+        <span v-if="!isHideIconsText">
+                    {{ $t('right.websiteList.sign') }}
+                </span>
+      </div>
+
     </div>
+
 
     <div id="right-placeholder"></div>
 

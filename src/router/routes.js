@@ -12,12 +12,6 @@ const routes = [
         title: '404',
         component: () => import('@/page/NotFoundPage.vue'), //.vue不能省略
     },
-    //pdf个人简历网页
-    {
-        path: '/PDF',
-        name: 'PadPage',
-        title: 'PDF',
-        component: () => import('@/page/PdfPage.vue'), //.vue不能省略
-    }
+    
 ]
 export default routes

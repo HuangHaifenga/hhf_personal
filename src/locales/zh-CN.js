@@ -18,8 +18,8 @@ export default {
     right: {
         websiteList: {
             blog: "个人简历",
-            img: "图床",
-            short: "短链",
+            ReactCase: "React案例",
+            sign: "签字案例",
             aiChat: "AI聊天",
             buy: "杂货铺",
             homepage: "个人主页",
